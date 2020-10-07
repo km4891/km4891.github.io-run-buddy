@@ -421,7 +421,6 @@ section {
 
 .trainer-3 {
     background-image: url("../images/trainer-3.jpg");
-    z-index: 9000;
 }
 
 .trainer-img {
@@ -438,6 +437,7 @@ section {
     content: "";
     height: 100%;
     width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color) );
     position: absolute;
     top: 0;
     left: 0;
@@ -445,9 +445,8 @@ section {
     transition: .5s;
   }
 
-  article:hover div {
+  .trainer:hover  .trainer-img::after {
       opacity: 1; 
-      background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color) );
 
   }
 
